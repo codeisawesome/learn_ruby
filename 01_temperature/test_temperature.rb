@@ -10,11 +10,11 @@ require 'temperature'
 # not a regular Ruby program file
 # The name should describe what is being tested.
 class TestTemperature < MiniTest::Test
-  def test_ftoc_converts_freezing_temperature
+  def test_ftoc_converts_freezing_temperature # check
     assert_equal 0, ftoc(32)
   end
 
-  def test_ftoc_converts_boiling_temperature
+  def test_ftoc_converts_boiling_temperature # check
     assert_equal 100, ftoc(212)
   end
 

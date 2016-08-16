@@ -13,6 +13,8 @@ class TestSimonSays < MiniTest::Test
     assert_equal "bye", echo("bye")
   end
 
+
+
   # calling the method shout and passing in "hello"
   # should return "HELLO"
   def test_shout_hello
@@ -22,6 +24,7 @@ class TestSimonSays < MiniTest::Test
   def test_shout_multiple_words
     assert_equal "HELLO WORLD", shout("hello world")
   end
+
 
   def test_repeat
     assert_equal "hello hello", repeat("hello")
@@ -40,6 +43,7 @@ class TestSimonSays < MiniTest::Test
     assert_equal "hello hello hello", repeat("hello", 3)
   end
 
+
   # start_of_word
   def test_start_of_word_returns_first_letter
     assert_equal "h", start_of_word("hello", 1)
@@ -57,11 +61,14 @@ class TestSimonSays < MiniTest::Test
     assert_equal "abc", start_of_word(s, 3)
   end
 
+
+
   # first_word
   def test_first_word
     assert_equal "Hello", first_word("Hello World")
     assert_equal "oh", first_word("oh dear")
   end
+
 
   # titleize
   def test_titleize_capitalizes_a_word
@@ -76,6 +83,7 @@ class TestSimonSays < MiniTest::Test
   def test_titleize_not_little_words
     assert_equal "War and Peace", titleize("war and peace")
   end
+
 
   def test_titleize_little_words_at_start
      assert_equal "The Bridge over the River Kwai", titleize("the bridge over the river kwai")
